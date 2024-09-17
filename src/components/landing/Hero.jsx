@@ -10,7 +10,7 @@ export const Hero = () => {
         >
           <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
+              <span class="sr-only">Mind Block</span>
               <img
                 class="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -39,20 +39,6 @@ export const Hero = () => {
                 />
               </svg>
             </button>
-          </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-              Product
-            </a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-              Features
-            </a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-              Marketplace
-            </a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-              Company
-            </a>
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <SignInButton mode="modal">
@@ -97,32 +83,6 @@ export const Hero = () => {
             </div>
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 py-6">
-                  <a
-                    href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Product
-                  </a>
-                  <a
-                    href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Features
-                  </a>
-                  <a
-                    href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Marketplace
-                  </a>
-                  <a
-                    href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Company
-                  </a>
-                </div>
                 <div class="py-6">
                   <a
                     href="#"
@@ -142,7 +102,7 @@ export const Hero = () => {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Your second brain for all your thoughts and content.{" "}
-              <a href="#" className="font-semibold text-indigo-600">
+              <a href="#features" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true"></span>
                 Learn more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -167,7 +127,7 @@ export const Hero = () => {
                 </a>
               </SignUpButton>
               <a
-                href="#"
+                href="#features"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 Explore features <span aria-hidden="true">→</span>

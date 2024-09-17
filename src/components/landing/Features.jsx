@@ -1,6 +1,13 @@
+import {
+  UploadIcon,
+  ChatBubbleIcon,
+  LockClosedIcon,
+  BoxModelIcon,
+} from "@radix-ui/react-icons";
+
 export const Features = () => {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-24 sm:py-32" id="features">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
@@ -19,7 +26,7 @@ export const Features = () => {
             <div className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  {/* Add appropriate icon here */}
+                  <UploadIcon color="white" />
                 </div>
                 Upload Anything
               </dt>
@@ -31,9 +38,9 @@ export const Features = () => {
             <div className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  {/* Add appropriate icon here */}
+                  <BoxModelIcon color="white" />
                 </div>
-                AI-Powered Organization
+                AI-Powered
               </dt>
               <dd className="mt-2 text-base leading-7 text-gray-600">
                 Our AI automatically categorizes and links your content for easy
@@ -43,7 +50,7 @@ export const Features = () => {
             <div className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  {/* Add appropriate icon here */}
+                  <ChatBubbleIcon color="white" />
                 </div>
                 Interactive Chat
               </dt>
@@ -55,7 +62,7 @@ export const Features = () => {
             <div className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
                 <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                  {/* Add appropriate icon here */}
+                  <LockClosedIcon color="white" />
                 </div>
                 Secure and Private
               </dt>

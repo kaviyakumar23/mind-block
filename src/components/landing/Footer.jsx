@@ -16,31 +16,16 @@ export const Footer = () => {
           </div>
           <div className="pb-6">
             <a
-              href="#"
+              href="#features"
               className="text-sm leading-6 text-gray-600 hover:text-gray-900"
             >
               Features
             </a>
           </div>
+
           <div className="pb-6">
             <a
-              href="#"
-              className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-            >
-              Pricing
-            </a>
-          </div>
-          <div className="pb-6">
-            <a
-              href="#"
-              className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-            >
-              Privacy
-            </a>
-          </div>
-          <div className="pb-6">
-            <a
-              href="#"
+              href="mailto:kaviyakumar23@gmail.com"
               className="text-sm leading-6 text-gray-600 hover:text-gray-900"
             >
               Contact

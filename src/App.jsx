@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Landing } from "./components/landing/Landing";
-import {
-  SignInButton,
-  SignOutButton,
-  SignUpButton,
-  UserButton,
-  useUser,
-} from "@clerk/clerk-react";
-import { useAction } from "convex/react";
-import { api } from "../convex/_generated/api";
-import { Route, Routes } from "react-router-dom";
+import { useUser } from "@clerk/clerk-react";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { Dashboard } from "./components/Dashboard";
+
+function ProtectedRoute({ children }) {
+  const { isSignedIn } = useUser();
+
+  return isSignedIn ? children : <Navigate to="/" />;
+}
 
 function App() {
   const { isSignedIn, user } = useUser();
@@ -18,7 +16,14 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
-      <Route path="/dashboard" element={<Dashboard />} />
+      <Route
+        path="/dashboard"
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
   );
 }
